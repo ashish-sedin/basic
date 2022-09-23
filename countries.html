@@ -1,0 +1,356 @@
+
+
+<!-- 2.Country Continent - Create an country_continent.html file.
+   With a select field (having country options) and a button 
+You must fill in valid id and other attributes for elements to make the buttons work. 
+Within the select you must have the
+ following options, the options must also have the same value as given below:
+This link https://simple.wikipedia.org/wiki/List_of_countries_by_continents shows you
+ the continents for each country if you are unsure. Hint Use Switch Statement
+India
+United States of America
+China
+Nepal
+Australia
+France
+Germany
+South Africa
+Nigeria
+Mexico
+Argentina
+Brazil
+Canada
+Singapore
+Sweden
+Now using Javascript do the following:
+When the button Find continent is clicked, you must output an alert on the page
+ which contains the text The continent is <name of continent>
+Eg: If the input is India -> The continent is Asia
+If the input is Argentina -> The continent is South America -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>all countries</title>
+
+    <style>
+  
+            .container {
+           background-color: #39dada;
+                      width: 80vw;
+                      max-width: 37.5em;
+                      padding: 3em 2.5em;
+                      position: absolute;
+                      transform: translate(-50%, -50%);
+                      top: 30%;
+                      left: 50%;
+                      
+                      box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+                        }
+                   
+                
+
+        input {
+          display:block;
+          margin: 10px 0 10px 0;
+          
+        }
+    
+        h1 {
+          color: red;
+          text-align: center;
+        }
+    
+        
+      </style>
+
+      <script>
+function submit(){
+
+var a = document.getElementById("country").value
+console.log(a)
+
+alert("this country is present in the continent of "+a)
+}
+
+
+      </script>
+</head>
+<body>
+    <h1>List of countries</h1>
+    <br><hr><br>
+  
+    <div class="container">
+      COUNTRY:
+    <select id="country" name="country">
+        <option>country</option>
+        <option value="Asia">Afganistan</option>
+        <option value="Europe">Alandi saared</option>
+        <option value="Europe">Albaania</option>
+        <option value="Africa">Alžeeria</option>
+        <option value="Oceania">Ameerika Samoa</option>
+        <option value="Europe">Andorra</option>
+        <option value="Africa">Angola</option>
+        <option value="North America">Anguilla</option>
+        <option value="Antarctica">Antarktika</option>
+        <option value="North America">Antigua ja Barbuda</option>
+        <option value="South America">Argentina</option>
+        <option value="Asia">Armeenia</option>
+        <option value="North America">Aruba</option>
+        <option value="Oceania">Austraalia</option>
+        <option value="Europe">Austria</option>
+        <option value="Asia">Aserbaidžaan</option>
+        <option value="North America">Bahama</option>
+        <option value="Asia">Bahrein</option>
+        <option value="Asia">Bangladesh</option>
+        <option value="North America">Barbados</option>
+        <option value="Europe">Valgevene</option>
+        <option value="Europe">Belgia</option>
+        <option value="North America">Belize</option>
+        <option value="Africa">Benin</option>
+        <option value="North America">Bermuda</option>
+        <option value="Asia">Bhutan</option>
+        <option value="South America">Boliivia</option>
+        <option value="North America">Bonaire, Sint Eustatius ja Saba</option>
+        <option value="Europe">Bosnia ja Hertsegoviina</option>
+        <option value="Africa">Botswana</option>
+        <option value="Antarctica">Bouveti saar</option>
+        <option value="South America">Brasiilia</option>
+        <option value="Asia">Briti India ookeani territoorium</option>
+        <option value="Asia">Brunei Darussalam</option>
+        <option value="Europe">Bulgaaria</option>
+        <option value="Africa">Burkina Faso</option>
+        <option value="Africa">Burundi</option>
+        <option value="Asia">Kambodža</option>
+        <option value="Africa">Kamerun</option>
+        <option value="North America">Kanada</option>
+        <option value="Africa">Roheneemesaared</option>
+        <option value="North America">Kaimani saared</option>
+        <option value="Africa">Kesk-Aafrika Vabariik</option>
+        <option value="Africa">Tšaad</option>
+        <option value="South America">Tšiili</option>
+        <option value="Asia">Hiina</option>
+        <option value="Asia">Jõulusaar</option>
+        <option value="Asia">Kookossaared (Keelingi) saared</option>
+        <option value="South America">Kolumbia</option>
+        <option value="Africa">Komoorid</option>
+        <option value="Africa">Kongo</option>
+        <option value="Africa">Kongo, Kongo Demokraatlik Vabariik</option>
+        <option value="Oceania">Cooki saared</option>
+        <option value="North America">Costa Rica</option>
+        <option value="Africa">Elevandiluurannik</option>
+        <option value="Europe">Horvaatia</option>
+        <option value="North America">Kuuba</option>
+        <option value="North America">Curacao</option>
+        <option value="Asia">Küpros</option>
+        <option value="Europe">Tšehhi Vabariik</option>
+        <option value="Europe">Taani</option>
+        <option value="Africa">Djibouti</option>
+        <option value="North America">Dominica</option>
+        <option value="North America">Dominikaani Vabariik</option>
+        <option value="South America">Ecuador</option>
+        <option value="Africa">Egiptus</option>
+        <option value="North America">El Salvador</option>
+        <option value="Africa">Ekvatoriaalne Guinea</option>
+        <option value="Africa">Eritrea</option>
+        <option value="Europe">Eesti</option>
+        <option value="Africa">Etioopia</option>
+        <option value="South America">Falklandi saared (Malvinas)</option>
+        <option value="Europe">Fääri saared</option>
+        <option value="Oceania">Fidži</option>
+        <option value="Europe">Soome</option>
+        <option value="Europe">Prantsusmaa</option>
+        <option value="South America">Prantsuse Guajaana</option>
+        <option value="Oceania">Prantsuse Polüneesia</option>
+        <option value="Antarctica">Prantsuse lõunapiirkonnad</option>
+        <option value="Africa">Gabon</option>
+        <option value="Africa">Gambia</option>
+        <option value="Asia">Gruusia</option>
+        <option value="Europe">Saksamaa</option>
+        <option value="Africa">Ghana</option>
+        <option value="Europe">Gibraltar</option>
+        <option value="Europe">Kreeka</option>
+        <option value="North America">Gröönimaa</option>
+        <option value="North America">Grenada</option>
+        <option value="North America">Guadeloupe</option>
+        <option value="Oceania">Guam</option>
+        <option value="North America">Guatemala</option>
+        <option value="Europe">Guernsey</option>
+        <option value="Africa">Guinea</option>
+        <option value="Africa">Guinea-Bissau</option>
+        <option value="South America">Guajaana</option>
+        <option value="North America">Haiti</option>
+        <option value="Antarctica">Heardi saar ja McDonaldi saared</option>
+        <option value="Europe">Püha Tool (Vatikani linnriik)</option>
+        <option value="North America">Honduras</option>
+        <option value="Asia">Hongkong</option>
+        <option value="Europe">Ungari</option>
+        <option value="Europe">Island</option>
+        <option value="Asia">India</option>
+        <option value="Asia">Indoneesia</option>
+        <option value="Asia">Iraan, Iraagi Islamivabariik</option>
+        <option value="Asia">Iraak</option>
+        <option value="Europe">Iirimaa</option>
+        <option value="Europe">Mani saar</option>
+        <option value="Asia">Iisrael</option>
+        <option value="Europe">Itaalia</option>
+        <option value="North America">Jamaica</option>
+        <option value="Asia">Jaapan</option>
+        <option value="Europe">Jersey</option>
+        <option value="Asia">Jordaania</option>
+        <option value="Asia">Kasahstan</option>
+        <option value="Africa">Keenia</option>
+        <option value="Oceania">Kiribati</option>
+        <option value="Asia">Korea, Korea Rahvademokraatlik Vabariik</option>
+        <option value="Asia">Korea Vabariik</option>
+        <option value="Europe">Kosovo</option>
+        <option value="Asia">Kuveit</option>
+        <option value="Asia">Kõrgõzstan</option>
+        <option value="Asia">Laose Demokraatlik Rahvavabariik</option>
+        <option value="Europe">Läti</option>
+        <option value="Asia">Liibanon</option>
+        <option value="Africa">Lesotho</option>
+        <option value="Africa">Libeeria</option>
+        <option value="Africa">Liibüa Araabia Jamahiriya</option>
+        <option value="Europe">Liechtenstein</option>
+        <option value="Europe">Leedu</option>
+        <option value="Europe">Luksemburg</option>
+        <option value="Asia">Aomen</option>
+        <option value="Europe">Makedoonia, endine Jugoslaavia Makedoonia Vabariik</option>
+        <option value="Africa">Madagaskar</option>
+        <option value="Africa">Malawi</option>
+        <option value="Asia">Malaisia</option>
+        <option value="Asia">Maldiivid</option>
+        <option value="Africa">Mali</option>
+        <option value="Europe">Malta</option>
+        <option value="Oceania">Marshalli saared</option>
+        <option value="North America">Martinique</option>
+        <option value="Africa">Mauritaania</option>
+        <option value="Africa">Mauritius</option>
+        <option value="Africa">Mayotte</option>
+        <option value="North America">Mehhiko</option>
+        <option value="Oceania">Mikroneesia, Makedoonia Liiduriigid</option>
+        <option value="Europe">Moldova Vabariik</option>
+        <option value="Europe">Monaco</option>
+        <option value="Asia">Mongoolia</option>
+        <option value="Europe">Montenegro</option>
+        <option value="North America">Montserrat</option>
+        <option value="Africa">Maroko</option>
+        <option value="Africa">Mosambiik</option>
+        <option value="Asia">Myanmar</option>
+        <option value="Africa">Namiibia</option>
+        <option value="Oceania">Nauru</option>
+        <option value="Asia">Nepal</option>
+        <option value="Europe">Holland</option>
+        <option value="North America">Hollandi Antillid</option>
+        <option value="Oceania">Uus-Kaledoonia</option>
+        <option value="Oceania">Uus-Meremaa</option>
+        <option value="North America">Nicaragua</option>
+        <option value="Africa">Niger</option>
+        <option value="Africa">Nigeeria</option>
+        <option value="Oceania">Niue</option>
+        <option value="Oceania">Norfolki saar</option>
+        <option value="Oceania">Põhja-Mariaanid</option>
+        <option value="Europe">Norra</option>
+        <option value="Asia">Omaan</option>
+        <option value="Asia">Pakistan</option>
+        <option value="Oceania">Palau</option>
+        <option value="Asia">Palestiina territoorium, okupeeritud</option>
+        <option value="North America">Panama</option>
+        <option value="Oceania">Paapua Uus-Guinea</option>
+        <option value="South America">Paraguay</option>
+        <option value="South America">Peruu</option>
+        <option value="Asia">Filipiinid</option>
+        <option value="Oceania">Pitcairn</option>
+        <option value="Europe">Poola</option>
+        <option value="Europe">Portugal</option>
+        <option value="North America">Puerto Rico</option>
+        <option value="Asia">Katar</option>
+        <option value="Africa">Taaskohtumine</option>
+        <option value="Europe">Rumeenia</option>
+        <option value="Asia">Venemaa Föderatsioon</option>
+        <option value="Africa">Rwanda</option>
+        <option value="North America">Püha Barthelemy</option>
+        <option value="Africa">Püha Helena</option>
+        <option value="North America">Saint Kitts ja Nevis</option>
+        <option value="North America">Saint Lucia</option>
+        <option value="North America">Püha Martin</option>
+        <option value="North America">Saint Pierre ja Miquelon</option>
+        <option value="North America">Saint Vincent ja Grenadiinid</option>
+        <option value="Oceania">Samoa</option>
+        <option value="Europe">San Marino</option>
+        <option value="Africa">Sao Tome ja Principe</option>
+        <option value="Asia">Saudi Araabia</option>
+        <option value="Africa">Senegal</option>
+        <option value="Europe">Serbia</option>
+        <option value="Europe">Serbia ja Montenegro</option>
+        <option value="Africa">Seišellid</option>
+        <option value="Africa">Sierra Leone</option>
+        <option value="Asia">Singapur</option>
+        <option value="North America">Püha Martin</option>
+        <option value="Europe">Slovakkia</option>
+        <option value="Europe">Sloveenia</option>
+        <option value="Oceania">Saalomoni Saared</option>
+        <option value="Africa">Somaalia</option>
+        <option value="Africa">Lõuna-Aafrika</option>
+        <option value="Antarctica">Lõuna-Georgia ja Lõuna-Sandwichi saared</option>
+        <option value="Africa">Lõuna-Sudaan</option>
+        <option value="Europe">Hispaania</option>
+        <option value="Asia">Sri Lanka</option>
+        <option value="Africa">Sudaan</option>
+        <option value="South America">Suriname</option>
+        <option value="Europe">Svalbard ja Jan Mayen</option>
+        <option value="Africa">Svaasimaa</option>
+        <option value="Europe">Rootsi</option>
+        <option value="Europe">Šveits</option>
+        <option value="Asia">Süüria Araabia Vabariik</option>
+        <option value="Asia">Taiwan, Hiina provints</option>
+        <option value="Asia">Tadžikistan</option>
+        <option value="Africa">Tansaania, Tšehhi Vabariik</option>
+        <option value="Asia">Tai</option>
+        <option value="Asia">Ida-Timor</option>
+        <option value="Africa">Minema</option>
+        <option value="Oceania">Tokelau</option>
+        <option value="Oceania">Tonga</option>
+        <option value="North America">Trinidad ja Tobago</option>
+        <option value="Africa">Tuneesia</option>
+        <option value="Asia">Türgi</option>
+        <option value="Asia">Türkmenistan</option>
+        <option value="North America">Turksi ja Caicose saared</option>
+        <option value="Oceania">Tuvalu</option>
+        <option value="Africa">Uganda</option>
+        <option value="Europe">Ukraina</option>
+        <option value="Asia">Araabia Ühendemiraadid</option>
+        <option value="Europe">Ühendkuningriik</option>
+        <option value="North America">Ühendriigid</option>
+        <option value="North America">Ameerika Ühendriikide väiksemad äärealad</option>
+        <option value="South America">Uruguay</option>
+        <option value="Asia">Usbekistan</option>
+        <option value="Oceania">Vanuatu</option>
+        <option value="South America">Venezuela</option>
+        <option value="Asia">Vietnam</option>
+        <option value="North America">Neitsisaared, Suurbritannia</option>
+        <option value="North America">Neitsisaared, USA</option>
+        <option value="Oceania">Wallis ja Futuna</option>
+        <option value="Africa">Lääne-Sahara</option>
+        <option value="Asia">Jeemen</option>
+        <option value="Africa">Sambia</option>
+        <option value="Africa">Zimbabwe</option>
+    </select>
+
+  <center>
+    
+      <input type="button" value="submit" onclick="submit()">
+   
+  </center>
+</div>
+</body>
+</html>
+
